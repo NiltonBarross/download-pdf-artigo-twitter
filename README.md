@@ -1,6 +1,6 @@
 # Download PDF - Artigo Twitter/X
 
-Ferramenta para baixar artigos (long-form posts) do Twitter/X e convertê-los em PDF formatado, preservando texto, imagens, blocos de código, listas e formatação inline.
+Baixa artigos (long-form posts) do Twitter/X e converte em PDF, preservando texto, imagens, código, listas e formatação.
 
 ## Funcionalidades
 
@@ -44,13 +44,7 @@ python3 twitter_to_pdf.py https://x.com/mntruell/status/2026736314272591924
 python3 twitter_to_pdf.py https://twitter.com/levie/status/2030714592238956960
 ```
 
-O PDF é gerado no diretório atual com o nome no formato `Autor_Titulo_do_artigo.pdf`.
-
-Para organizar os PDFs gerados, mova-os para a pasta `pdf_exportados/`:
-
-```bash
-mv *.pdf pdf_exportados/
-```
+O PDF é gerado no diretório atual com o nome no formato `Autor_Titulo_do_artigo.pdf`. PDFs não são versionados (ver `.gitignore`).
 
 ## Como funciona
 
@@ -67,7 +61,6 @@ mv *.pdf pdf_exportados/
 download-pdf-artigo-twitter/
 ├── twitter_to_pdf.py    # Script principal
 ├── requirements.txt     # Dependências (playwright)
-├── pdf_exportados/      # Pasta para PDFs gerados (ignorada pelo git)
 ├── .gitignore
 └── README.md
 ```
